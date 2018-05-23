@@ -1,3 +1,13 @@
+<?php
+if ($this->session->flashdata('login_error') != NULL) {
+echo '<div class="alert alert-danger auth-message">' . $this->session->flashdata('login_error') . '</div>';
+}
+
+if ($this->session->flashdata('logout') != NULL) {
+    echo '<h5 class="alert alert-info auth-message">' . $this->session->flashdata('logout') . '</h5>';
+}
+?>
+
 <style>
     body {
         background-color: #eee;
@@ -44,6 +54,12 @@
         float: right;
         padding-top: 16px;
     }
+
+    .auth-message {
+        padding: 12px;
+        max-width: 550px;
+        margin: 1px auto;
+    }
 </style>
 <body>
 
@@ -66,8 +82,9 @@
                 <label><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="password" required>
 
+                <input type="checkbox"> Remember me
+
                 <button type="submit">Login</button>
-                <input type="checkbox" checked="checked"> Remember me
             </div>
         </form>
     </div>

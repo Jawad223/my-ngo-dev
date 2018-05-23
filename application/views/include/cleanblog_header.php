@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <?php
     foreach ($title as $key) {
         $title = $key;

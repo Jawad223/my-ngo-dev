@@ -64,7 +64,7 @@
                                             </td>
                                             <td>
                                                 <?php if (!is_null($key->file)) { ?>
-                                                    <a href="<?php echo base_url(); ?>/uploads/<?php echo $key->file; ?>">
+                                                    <a href="<?php echo base_url(); ?>uploads/<?php echo $key->file; ?>" >
                                                         View
                                                     </a>
                                                 <?php } else { ?>

@@ -31,7 +31,7 @@ class Measurement extends CI_Controller {
 
     public function listUnitV() {
         $data['unit'] = $this->ListModel->getUnits();
- 
+
         $this->styleFiles();
         $this->navbarFiles();
         $this->sidebarFiles();
@@ -97,7 +97,6 @@ class Measurement extends CI_Controller {
     }
 
     public function updateUnit() {
-
         $config = array(
             array(
                 'field' => 'measurement_unit',

@@ -2,12 +2,12 @@
 if (isset($this->session->userdata['login_user'])) {
     $username = $this->session->userdata['username'];
 
-    // if user is logged in, show the logout option and hide the login modal
+    // If user is logged in, show the logout option and hide the login modal
     $log_option = '<span class="glyphicon glyphicon-log-out"></span>';
     $log_option .= ' Logout';
     $log_href = base_url() . 'authorization/logout';
 
-    // if user is logged in, don't show the sign up option but user's name
+    // If user is logged in, don't show the sign up option but user's name
     $signup = '<span class="user-avatar pull-left" style="margin-right:6px; margin-top:-5px;">';
     $signup .= '<img src="' . base_url() . '/assets/dist/img/profile.png" 
                 class="img-responsive img-circle" width="25px" height="25px" /></span>' . $username;
@@ -15,12 +15,12 @@ if (isset($this->session->userdata['login_user'])) {
 
 }
 else {
-    // if user is not logged in, show the login option and login modal
+    // If user is not logged in, show the login option and login modal
     $log_option = '<span class="glyphicon glyphicon-log-in"></span>';
     $log_option .= ' Login';
     $log_href = base_url().'user/login';
 
-    // if user is not logged in, show the sign up option
+    // If user is not logged in, show the sign up option
     $signup = '<span class="glyphicon glyphicon-user"></span>Sign Up';
     $signup_href = base_url().'user/signup';
 }

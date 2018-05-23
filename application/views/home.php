@@ -1,10 +1,4 @@
 <?php
-if ($this->session->flashdata('logout') != NULL) {
-    echo '<h5 class="alert alert-info">' . $this->session->flashdata('logout') . '</h5>';
-}
-if ($this->session->flashdata('login_error') != NULL) {
-    echo '<h5 class="alert alert-danger">' . $this->session->flashdata('login_error') . '</h5>';
-}
 if ($this->session->flashdata('signup_fail') != NULL) {
     echo '<h5 class="alert alert-danger">' . $this->session->flashdata('signup_fail') . '</h5>';
 }

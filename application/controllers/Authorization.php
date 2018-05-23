@@ -41,8 +41,8 @@ class Authorization extends CI_Controller {
             redirect(base_url().'dashboard/userdashboard', 'refresh');
         }
         else {
-            $this->session->set_flashdata('login_error',' Invalid Username / Password');
-            redirect(base_url().'home','refresh');
+            $this->session->set_flashdata('login_error',' Invalid username/password');
+            redirect(base_url().'user/login','refresh');
         }
     }
 
@@ -56,7 +56,7 @@ class Authorization extends CI_Controller {
         $this->session->unset_userdata('userURL');
         $this->session->unset_userdata('user_id');
         $this->session->set_flashdata('logout',' Logged out successfully');
-        $redir = base_url().'home';
+        $redir = base_url().'user/login';
         redirect($redir,'refresh');
     }
 

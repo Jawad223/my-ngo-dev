@@ -34,7 +34,7 @@ if (!in_array($checkURL, $this->session->userdata('userURL'))) {
             <div class="col-sm-12" style="margin-bottom: 5px;">
                 <span class="pull-right">
                     <?php if (in_array("category/addcategory", $this->session->userdata('userURL'))) { ?>
-                    <button class="btn bg-purple" id="add-category">Add Category</button>
+                    <button class="btn btn-primary" id="add-category">Add Category</button>
                     <?php } ?>
                 </span>
             </div>

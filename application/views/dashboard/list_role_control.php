@@ -34,7 +34,7 @@ if (!in_array($checkURL, $this->session->userdata('userURL'))) {
             <div class="col-sm-12" style="margin-bottom: 5px;">
                 <span class="pull-right">
                     <?php if (in_array("rolecontrol/addrolecontrol", $this->session->userdata('userURL'))) { ?>
-                        <button class="btn bg-purple" id="add-role-control">Add Role Control</button>
+                        <button class="btn btn-primary" id="add-role-control">Add Role Control</button>
                     <?php } ?>
                 </span>
             </div>
